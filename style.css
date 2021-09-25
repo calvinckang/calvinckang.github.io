@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Nunito+Sans&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+}
+
+img, iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #ffffff;
+	color: #9B802E;
+	margin: 40px auto 40px auto;
+	width: 1120px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+  line-height: 1.2;
+  color: #9B802E;
+}
+
+h1 span {
+  color: #ffffff;
+  background-color: #CCBE99;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+  line-height: 1.3;
+  color: #000000;
+}
+
+nav, footer, button {
+  font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+  line-height: 1.3;
+  color: #000000;
+}
+
+nav a, footer a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 0 0 40px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+nav a:hover, footer a:hover, a.active {
+  color: #9B802E;
+  border-bottom: 2px solid #9B802E;
+}
+
+section {
+  margin: 120px 0 120px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px 32px;
+  grid-auto-flow: dense;
+}
+
+section h1 {
+  grid-column: 2 / span 10;
+  text-align: center;
+}
+
+section h2 {
+  margin: 0 0 16px 0;
+}
+
+section.project div.artwork {
+  grid-column: 1 / span 8;
+  text-align: center;
+}
+
+section.project div.description {
+  grid-column: 9 / span 4;
+}
+
+section.project img {
+  max-height: 744px;
+}
+
+section.grid-layout h2 {
+  margin: 0 0 32px 0;
+}
+
+section.grid-layout div {
+  grid-column: span 12;
+}
+
+section.grid-layout img {
+  max-height: 744px;
+}
+
+video {
+  width: 100%;
+}
+
+section.about div.photo {
+  grid-column: 1 / span 6;
+  text-align: center;
+}
+
+section.about div.bio {
+  grid-column: 8 / span 6;
+}
+
+section.about h1 {
+  text-align: left;
+  margin: 0 0 16px 0;
+}
+
+section.about p {
+  margin: 0 0 16px 0;
+}
+
+section.contact div.form {
+  grid-column: 4 / span 6;
+}
+
+section.contact h1 {
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  border: 2px solid #CCBE99;
+  padding: 8px 16px 8px 16px;
+}
+
+textarea {
+  height: 200px;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #9B802E;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin: 16px 0 16px 0;
+}
+
+button {
+	background-color: #CCBE99;
+  color: #ffffff;
+  border: none;
+  padding: 8px 40px 8px 40px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9B802E;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  margin: 0 20px 0 20px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: auto;
+    margin: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 24px;
+  }
+  section h1, section.project div.artwork, section.project div.description, section.about div.photo, section.about div.bio, section.contact div.form {
+    grid-column: 1 / span 4;
+  }
+  header {
+  	flex-direction: column;
+	}
+  h1 {
+    font-size: 32px;
+  }
+  nav {
+    margin: 40px 0 0 0;
+  }
+  nav a {
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 424px) {
+  body {
+    margin: 24px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  nav, footer, button {
+    font-size: 20px;
+  }
+  nav {
+    margin: 24px 0 0 0;
+  }
+  nav a {
+    margin: 0 10px 0 10px;
+  }
+  section {
+    margin: 80px 0 80px 0;
+  }
+}

@@ -4,7 +4,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #000000;
+	color: #18191C;
 	margin: 40px auto 40px auto;
 	width: 1120px;
 }
@@ -20,7 +20,7 @@ header a.logo {
 	font-size: 40px;
 	font-weight: 600;
   line-height: 1.3;
-  color: #000000;
+  color: #18191C;
   text-decoration: none;
 }
 
@@ -29,15 +29,15 @@ h1 {
 	font-size: 28px;
 	font-weight: 600;
   line-height: 1.3;
-  color: #000000;
+  color: #18191C;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: 600;
   line-height: 1.3;
-  color: #000000;
+  color: #18191C;
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ h3 {
 	font-weight: 600;
   line-height: 1.3;
   letter-spacing: 1px;
-  color: #000000;
+  color: #18191C;
 }
 
 nav {
@@ -55,18 +55,23 @@ nav {
 	font-size: 20px;
 	font-weight: 600;
   line-height: 1.3;
-  color: #000000;
+  color: #18191C;
 }
 
 nav a {
-  color: #bbbbbb;
+  color: #B9BBBE;
   text-decoration: none;
   margin: 0 0 0 40px;
   transition: color 0.3s;
 }
 
 nav a:hover, a.active {
-  color: #000000;
+  color: #18191C;
+}
+
+div.divider-home {
+  margin-top: 160px;
+  text-align: center;
 }
 
 section {
@@ -100,6 +105,24 @@ section.intro h1 {
   grid-column: 2 / span 10;
   text-align: center;
   margin: 60px 0 60px 0;
+}
+
+section.intro .gradient-1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: linear-gradient(90deg, #702bfc, #ff2ab8);
+}
+
+section.intro .gradient-2 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  background-image: linear-gradient(90deg, #0059e8, #00a957);
 }
 
 section.grid-layout a.thumbnail {
@@ -152,7 +175,7 @@ section.project div.description {
 }
 
 section.project div.description a {
-  color: #000000;
+  color: #18191C;
 }
 
 section.contact div.info {
@@ -167,7 +190,7 @@ section.contact div.info p {
 
 section.contact div.info a {
   font-weight: 400;
-  color: #000000;
+  color: #18191C;
   /* text-decoration: none; */
 }
 
@@ -208,6 +231,9 @@ footer {
 
 @media (max-width: 700px) {
   h2 {
+    text-align: left;
+  }
+  div.divider-home {
     text-align: left;
   }
   section {

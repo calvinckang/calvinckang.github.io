@@ -182,6 +182,10 @@ section.grid-layout h1 {
   margin: 20px;
 }
 
+section.grid-layout h3 {
+  color: #ffffff;
+}
+
 section.project h1 {
   text-align: left;
 }

@@ -89,7 +89,7 @@ section {
   margin: 60px 0 60px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 32px 32px;
+  gap: 40px 40px;
   grid-auto-flow: dense;
 }
 
@@ -107,10 +107,14 @@ section nav a.right {
   text-align: right;
 }
 
-section img {
+img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 4px;
+}
+
+section.grid-layout img {
+  height: 100%;
 }
 
 section.intro h1 {
@@ -199,16 +203,61 @@ section.project div.artwork, section.project div.divider-title, section.project 
   grid-column: span 12;
 }
 
-section.project div.title {
+/* section.project div.sub-artwork {
+  grid-column: 2 / span 10;
+} */
+
+section.project div.divider-line {
+  grid-column: 1 / span 12;
+  border: 1px solid #e4e7eb;
+}
+
+section.project div.title, section.project div.left-column {
   grid-column: 2 / span 5;
 }
 
-section.project div.description {
+section.project div.description, section.project div.right-column {
   grid-column: 7 / span 5;
+}
+
+section.project div.middle-column {
+  grid-column: 4 /span 6;
+}
+
+section.project div.alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.project p {
+  margin-bottom: 0;
+}
+
+section.project ul {
+  margin-top: 0;
+  padding-left: 24px;
 }
 
 section.project div.description a {
   color: #18191C;
+}
+
+section.project p.large-text {
+  font-size: 20px;
+}
+
+section.project h2.number {
+  color: #18191C;
+  border: 1px solid #18191C;
+  /* background-color: #e4e7eb; */
+  border-radius: 80px;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section.about div.photo {
@@ -229,7 +278,7 @@ section.contact p {
   font-weight: 700;
 }
 
-section.contact a, section.about a {
+section.project a, section.contact a, section.about a {
   font-weight: 400;
   color: #18191C;
   /* text-decoration: none; */
@@ -304,11 +353,17 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px 24px;
   }
-  section.intro h1, section.project div.artwork, section.project div.title, section.project div.description, section.project div.divider-title, section.project div.video, section nav, section.about div.photo, section.about div.info, section.contact {
+  section.intro h1, section.project div.artwork, section.project div.title, section.project div.description, section.project div.left-column, section.project div.right-column, section.project div.middle-column, section.project div.divider-title, section.project div.divider-line, section.project div.video, section nav, section.about div.photo, section.about div.info, section.contact {
     grid-column: 1 / span 4;
   }
   section.grid-layout a {
     margin: 0 0 20px 0;
+  }
+  section.project div.right-column .no-margin-top {
+    margin-top: 0;
+  }
+  section.project div.alignment {
+    align-items: flex-start;
   }
   section.contact {
     flex-direction: column;
@@ -344,6 +399,9 @@ footer {
   }
   h1 {
     font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
 

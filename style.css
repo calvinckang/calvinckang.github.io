@@ -113,14 +113,30 @@ img {
   border-radius: 4px;
 }
 
-section.grid-layout img {
-  height: 100%;
+img.memoji {
+  margin-top: 120px;
+}
+
+div.left-column {
+  grid-column: 2 / span 5;
+}
+
+div.right-column {
+  grid-column: 7 / span 5;
+}
+
+div.middle-column {
+  grid-column: 4 /span 6;
 }
 
 section.intro h1 {
   grid-column: 2 / span 10;
   text-align: center;
   margin: 160px 0 160px 0;
+}
+
+section.intro h1.home-intro {
+  margin-top: 0;
 }
 
 section.intro .gradient-1 {
@@ -149,6 +165,10 @@ section.intro .gradient-2 {
   -webkit-box-decoration-break: clone;
   background-image: linear-gradient(90deg, #ed186a, #ff951c);
 } */
+
+section.grid-layout img {
+  height: 100%;
+}
 
 section.grid-layout a.thumbnail {
   position: relative;
@@ -212,16 +232,12 @@ section.project div.divider-line {
   border: 1px solid #e4e7eb;
 }
 
-section.project div.title, section.project div.left-column {
+section.project div.title {
   grid-column: 2 / span 5;
 }
 
-section.project div.description, section.project div.right-column {
+section.project div.description {
   grid-column: 7 / span 5;
-}
-
-section.project div.middle-column {
-  grid-column: 4 /span 6;
 }
 
 section.project div.alignment {
@@ -247,6 +263,10 @@ section.project p.large-text {
   font-size: 20px;
 }
 
+section.project p.large-text.no-margin-top {
+  margin-top: 12px;
+}
+
 section.project h2.number {
   color: #18191C;
   border: 1px solid #18191C;
@@ -258,14 +278,6 @@ section.project h2.number {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-section.about div.photo {
-  grid-column: 3 / span 8;
-}
-
-section.about div.info {
-  grid-column: 3 / span 8;
 }
 
 section.contact {
@@ -353,14 +365,14 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px 24px;
   }
-  section.intro h1, section.project div.artwork, section.project div.title, section.project div.description, section.project div.left-column, section.project div.right-column, section.project div.middle-column, section.project div.divider-title, section.project div.divider-line, section.project div.video, section nav, section.about div.photo, section.about div.info, section.contact {
+  div.left-column, div.right-column, div.middle-column, section.intro h1, section.project div.artwork, section.project div.title, section.project div.description, section.project div.divider-title, section.project div.divider-line, section.project div.video, section nav, section.contact {
     grid-column: 1 / span 4;
+  }
+  div.right-column .no-margin-top {
+    margin-top: 0;
   }
   section.grid-layout a {
     margin: 0 0 20px 0;
-  }
-  section.project div.right-column .no-margin-top {
-    margin-top: 0;
   }
   section.project div.alignment {
     align-items: flex-start;
@@ -402,6 +414,9 @@ footer {
   }
   h2 {
     font-size: 20px;
+  }
+  img.memoji {
+    margin-top: 100px;
   }
 }
 

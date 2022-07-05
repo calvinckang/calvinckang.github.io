@@ -80,6 +80,13 @@ nav a:hover, a.active {
   color: #18191C;
 }
 
+section.jumplink {
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+}
+
 div.divider-home {
   margin-top: 160px;
   text-align: center;

@@ -287,6 +287,12 @@ section.project h2.number {
   align-items: center;
 }
 
+section.project a, section.contact a, section.about a {
+  font-weight: 400;
+  color: #18191C;
+  /* text-decoration: none; */
+}
+
 section.contact {
   grid-column: span 12;
   display: flex;
@@ -295,12 +301,6 @@ section.contact {
 
 section.contact p {
   font-weight: 700;
-}
-
-section.project a, section.contact a, section.about a {
-  font-weight: 400;
-  color: #18191C;
-  /* text-decoration: none; */
 }
 
 section.contact div.middle {
@@ -427,9 +427,6 @@ footer {
   }
   h2 {
     font-size: 20px;
-  }
-  img.memoji {
-    margin-top: 100px;
   }
 }
 

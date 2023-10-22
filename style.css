@@ -286,6 +286,12 @@ section.project a, section.contact a, section.about a {
   /* text-decoration: none; */
 }
 
+section.about h1 {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+
 section.contact {
   grid-column: span 12;
   display: flex;
@@ -394,6 +400,9 @@ footer {
   }
   section.jumplink {
     top: -24px;
+  }
+  section.about h1 {
+    margin-top: 40px;
   }
 }
 

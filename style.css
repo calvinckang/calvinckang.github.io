@@ -152,17 +152,18 @@ section.intro .gradient-1 {
   -webkit-text-fill-color: transparent;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  background-image: linear-gradient(90deg, #702bfc, #ff2ab8);
+  /* background-image: linear-gradient(90deg, #702bfc, #ff2ab8); */
+  background-image: linear-gradient(90deg, #896b48, #cf9c64);
 }
 
-section.intro .gradient-2 {
+/* section.intro .gradient-2 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   background-image: linear-gradient(90deg, #0059e8, #00a957);
-}
+} */
 
 /* section.intro .gradient-3 {
   background-clip: text;

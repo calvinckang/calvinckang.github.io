@@ -80,6 +80,10 @@ nav a:hover, a.active {
   color: #18191C;
 }
 
+nav a.left {
+  margin: 0;
+}
+
 div.divider-home {
   margin-top: 160px;
   text-align: center;

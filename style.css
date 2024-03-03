@@ -451,6 +451,9 @@ footer.footer-contact {
   iframe {
     height: 480px;
   }
+  div.hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 424px) {

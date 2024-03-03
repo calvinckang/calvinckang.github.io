@@ -116,6 +116,20 @@ img.memoji {
   margin-top: 100px;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #A1A6AC;
+  text-align: center;
+  margin-top: 8px;
+  /* font-style: italic; */
+}
+
 div.left-column {
   grid-column: 2 / span 5;
 }

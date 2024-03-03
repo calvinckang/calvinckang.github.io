@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hola! I'm a Product Designer with a solid background in visual design and a strong knowledge of HTML and CSS, based in Barcelona.">
+  <meta property="og:image" content="https://calvinckang.github.io/images/social-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <title>Calvin Kang — Dow Jones Risk & Compliance</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEK505NVDB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEK505NVDB');
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Calvin Kang</a>
+    <nav>
+      <a href="index.html#work" class="active">Work</a>
+      <!-- <a href="past-work.html">Past Work</a> -->
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="project">
+
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/cover.png" alt="Dow Jones Risk & Compliance Cover"/>
+        <figcaption>Risk profile page after redesign.</figcaption>
+      </figure>
+    </div>
+    <div class="title">
+      <h1>Dow Jones Risk & Compliance</h1>
+      <h3>Risk Profile Page Redesign and Design System</h3>
+    </div>
+    <div class="description">
+      <p>Redesigning a <strong>data-dense</strong>, financial crime compliance product to enhance its <strong>usability</strong> and <strong>accessibility</strong>, and building its design system.</p>
+      <p><strong>Role:</strong> UI Designer
+      </br>
+      <strong>Team:</strong> UX Designer, Accessibility Expert, Design System Advocate
+      </br>
+      <strong>Duration:</strong> July 2023 - present</p>
+    </div>
+
+    <div class="divider-line"></div>
+
+    <div class="divider-title">
+      <h2>Introduction ✍🏻</h2>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Background</strong></p>
+      <p>RiskCenter Financial Crime is Dow Jones' B2B product under Risk & Compliance, designed for conducting due diligence on potential customers, ongoing monitoring, and sanctions screening. <strong>The users</strong> of this product include <strong>financial institutions</strong> looking to <strong>ensure compliance</strong> with regulations. One of the tasks they often do is performing a database search for <strong>risk profiles</strong> on entities and individuals, assessing them to make informed decisions.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/old-risk-profile-page.gif" alt="Old Risk Profile Page"/>
+        <figcaption>Risk profile page before redesign.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Problem</strong></p>
+      <p>From the <strong>user feedback</strong> received, we identified several problems. Specific to the risk profile page, the users complained that there's a lot of <strong>blank space</strong> in the UI. Users wanted to view more data at first glance without having to scroll too much, stating that <strong>information density</strong> is important for them to be more efficient in their workflow. Users also reported a lack of clear <strong>visual hierarchy</strong> and confusing <strong>reading pattern</strong> in some sections.</p>
+      <p>Apart from user feedback, we also found <strong>accessibility issues</strong>, e.g. unmet minimum color contrast, and missing aria-label and role. The UI also felt <strong>outdated</strong> and it wasn't built using a design system.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/problem.png" alt="Identified Problems"/>
+        <figcaption>Problems identified from user feedback.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Scope</strong></p>
+      <p>These are the things we wanted to do in this project:</br>
+      <ul>
+        <li>Optimize information density</li>
+        <li>Improve information architecture and visual hierarchy</li>
+        <li>Comply with accessibility</li>
+        <li>Modernize UI</li>
+        <li>Build design system</li>
+      </ul>
+      <p>The <strong>goals</strong> were to enhance usability, improve user satisfaction, and ultimately, increase sales and retention.</p>
+    </div>
+
+    <div class="divider-line"></div>
+    
+    <div class="divider-title">
+      <h2>Design Process 👨🏻‍💻</h2>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Design Competitive Analysis</strong></p>
+      <p>My role was UI Designer in this project, collaborating closely and working in parallel with the UX Designer. I started my process by doing a design competitive analysis of the top 10 competitors, among them were <strong>Factset</strong> and <strong>Refinitiv</strong>, which both provided a <strong>highly optimized screen real estate</strong> with information density while maintaining a solid information architecture, clear visual hierarchy, and accessibility compliance.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/factset-and-refinitiv.png" alt="Factset and Refinitiv"/>
+        <figcaption>Screenshot of competitors: Factset and Refinitiv.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>UI Audit</strong></p>
+      <p>After an extensive audit of the colors, shadows, typography, icons, and grids, plenty of inconsistencies were identified in the UI, predominantly in the colors. We decided to <strong>consolidate redundant colors</strong> for greater consistency, and <strong>make adjustments</strong> to ensure all elements have sufficient color contrast.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/color-audit.png" alt="Color Audit"/>
+        <figcaption>Color audit.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Design Direction</strong></p>
+      <p>The findings from design competitive analysis and UI audit served to inspire and guide the design direction. The chosen concept of our moodboard was <strong>Expert Experience</strong>, an experience that conveys a sense of expertise and authority, described by these three words: <strong>Credible</strong>, <strong>Authoritative</strong>, and <strong>Functional</strong>.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/moodboard.png" alt="Moodboard"/>
+        <figcaption>Moodboard concept: Expert Experience.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Visual Exploration</strong></p>
+      <p>The old <strong>left navigation</strong> had a clunky look and feel, and some of the <strong>icons</strong> weren't accurate representations of the items. I explored the possibilities of the icons to convey the true meaning, while ensuring the style consistency. Some <strong>improvements</strong> were also made in the visual hierarchy.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/left-navigation.png" alt="Left Navigation"/>
+        <figcaption>Left navigation icons exploration and visual hierarchy improvement.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p>On the subject of the <strong>page design</strong>, several options were made and iterated to achieve what we had in mind in the design direction.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/page-design-iterations.png" alt="Page Design Iterations"/>
+        <figcaption>Some of the page design options and iterations.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Prototype and User Testing</strong></p>
+      <p>The chosen design was then turned into an <strong>interactive prototype</strong> to be <strong>tested</strong> with user groups in different regions to obtain feedback.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 4px;" width="100%" height="760" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsutUyIKrU4156DniHkwJx8%2FPortfolio%3Fpage-id%3D401%253A119563%26type%3Ddesign%26node-id%3D422-119020%26viewport%3D-1971%252C-3385%252C0.32%26t%3DFVS8MIaxt7IXTr40-1%26scaling%3Dscale-down%26starting-point-node-id%3D422%253A119020%26mode%3Ddesign" allowfullscreen></iframe>
+        <figcaption>Interactive prototype of the redesigned risk profile page.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p class="large-text no-margin-top"><strong>Design System</strong></p>
+      <p>The design system work was initiated by building the <strong>foundations</strong>, such as colors, typography, elevation, grids, iconography, etc. Based on the color audit that I did previously, I created the <strong>core palettes</strong> for this product (primary, secondary, tertiary, and so on), and assigned them to the <strong>contextual colors</strong> (ink, interface, and interactive). Once the foundations were defined, it was time to build the <strong>component library</strong>. It's important to keep <strong>accessibility</strong> in mind throughout this process.</p>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/core-palettes-and-contextual-colors.png" alt="Core Palettes and Contextual Colors"/>
+        <figcaption>Core palettes and contextual colors.</figcaption>
+      </figure>
+    </div>
+    <div class="artwork">
+      <figure>
+        <img src="images/dow-jones-risk-and-compliance/button-component.png" alt="Button Component"/>
+        <figcaption>Button component.</figcaption>
+      </figure>
+    </div>
+    <div class="middle-column">
+      <p>All these assets were handed off to the Developers with <strong>thorough documentation</strong>. After they built the components in Storybook, I did a <strong>QA</strong> to ensure alignment between design and development.</p>
+    </div>
+
+    <div class="divider-line"></div>
+    
+    <div class="divider-title">
+      <h2>Next Steps ➡️</h2>
+    </div>
+    <div class="middle-column">
+      <p>This is an <strong>ongoing project</strong> – the Research team is currently testing the interactive prototype with different user groups, while the Developers are working on the implementations. Once we receive the results from the user testing, we will <strong>evaluate</strong> and <strong>iterate</strong> as necessary.</p>
+      <p>As for the <strong>design system</strong>, it is a living breathing entity that needs to be maintained and updated regularly. The work doesn't stop here and it will always evolve.</p>
+    </div>
+
+    <div class="divider-line"></div>
+
+    <div class="artwork">
+      <figure>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 4px;" width="100%" height="760" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsutUyIKrU4156DniHkwJx8%2FPortfolio%3Fpage-id%3D401%253A119563%26type%3Ddesign%26node-id%3D422-173218%26viewport%3D-1971%252C-3385%252C0.32%26t%3DFVS8MIaxt7IXTr40-1%26scaling%3Dscale-down%26starting-point-node-id%3D422%253A173218%26mode%3Ddesign" allowfullscreen></iframe>
+        <figcaption>Interactive prototype of the before and after redesign.</figcaption>
+      </figure>
+    </div>
+
+    <div class="middle-column">
+      <p>Thank you for reading my case study, any feedback is greatly appreciated. Let's <a href="contact.html">get in touch!</a> 💬</p>
+    </div>
+
+  </section>
+
+  <section>
+    <nav>
+      <a class="left" href="chorescore.html">&lt Chorescore</a>
+      <a class="right" href="reportly.html">Reportly &gt</a>
+    </nav>
+  </section>
+
+  <footer>
+    <p>Copyright © 2021 Calvin Kang. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

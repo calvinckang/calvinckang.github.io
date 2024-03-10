@@ -59,6 +59,12 @@ h3 {
   color: #18191C;
 }
 
+p.pull-quote {
+  margin-left: 24px;
+  margin-right: 24px;
+  /* font-style: italic; */
+}
+
 nav {
   display: flex;
   flex-direction: row;

@@ -451,7 +451,7 @@ footer.footer-contact {
   section.jumplink {
     top: -24px;
   }
-  section.about h1 {
+  h1.page-title {
     margin-top: 40px;
   }
   iframe {

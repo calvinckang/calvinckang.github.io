@@ -16,6 +16,17 @@ const images = [
   "images/memoji/cat.png"
 ];
 
+// Function to preload images
+function preloadImages() {
+  images.forEach((image) => {
+    const img = new Image();
+    img.src = image;
+  });
+}
+
+// Call the function to start preloading
+preloadImages();
+
 // Store the index of the last displayed image
 let lastImageIndex = null;
 

@@ -43,7 +43,7 @@ setTimeout(() => {
 
   // Remove the fade-out class to fade in the new image
   imageElement.classList.remove('fade-out');
-}, 200); // Adjust this time based on your transition duration
+}, 300); // Adjust this time based on your transition duration
 }
 
 // Attach the function to the image's click event

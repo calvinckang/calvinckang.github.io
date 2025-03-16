@@ -15,10 +15,6 @@ p, span, h1, h2, h3, strong, figcaption {
 ::selection {
   background: #FFD465;
   color: #1b2024;
-  /* background: #004C94; */
-  /* background: #007cd4; */
-  /* background: #169B40; */
-  /* color: #fff; */
 }
 
 body {
@@ -76,14 +72,12 @@ h3 {
 	font-size: 16px;
 	font-weight: 600;
   line-height: 1.3;
-  /* letter-spacing: 1px; */
   color: #1b2024;
 }
 
 p.pull-quote {
   margin-left: 24px;
   margin-right: 24px;
-  /* font-style: italic; */
 }
 
 nav {
@@ -153,7 +147,7 @@ img {
 
 img#memoji {
   margin-top: 100px;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
 }
 
 .fade-out {
@@ -257,32 +251,8 @@ section.intro .gradient-1 {
   -webkit-text-fill-color: transparent;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  /* background-image: linear-gradient(90deg, #896b48, #cf9c64); */
-  /* background-image: linear-gradient(90deg, #702bfc, #ff2ab8); */
   background-image: linear-gradient(90deg, #004C94 45%, #378bd4 90%);
-  /* background-image: linear-gradient(90deg, #022640, #5786AB); */
-  /* background-image: linear-gradient(90deg, #407C4D, #1ECF4C); */
-  /* background-image: linear-gradient(90deg, #10640F, #169B40); */
-  /* background-image: linear-gradient(90deg, #0090F7 8%, #BA62FC, #F2416B, #F55600); */
 }
-
-/* section.intro .gradient-2 {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  background-image: linear-gradient(90deg, #022640, #5786AB);
-} */
-
-/* section.intro .gradient-3 {
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  background-image: linear-gradient(90deg, #ed186a, #ff951c);
-} */
 
 section.grid-layout a.thumbnail {
   grid-column: span 6;
@@ -321,10 +291,6 @@ section.project h1 {
 section.project div.artwork, section.project div.divider-title, section.project div.video {
   grid-column: span 12;
 }
-
-/* section.project div.sub-artwork {
-  grid-column: 2 / span 10;
-} */
 
 section.project div.divider-line {
   grid-column: 1 / span 12;
@@ -382,7 +348,6 @@ section.project h2.number {
 section.project a, section.contact a, section.about a {
   font-weight: 400;
   color: #1b2024;
-  /* text-decoration: none; */
 }
 
 section.about h1 {
@@ -401,14 +366,6 @@ section.contact {
 section.contact p {
   font-weight: 700;
 }
-
-/* section.contact div.middle {
-  margin: 0 40px 0 40px;
-} */
-
-/* video {
-  width: 100%;
-} */
 
 footer {
   display: flex;
@@ -496,9 +453,6 @@ footer.footer-contact {
   section.contact {
     flex-direction: column;
   }
-  /* section.contact div.middle {
-    margin: 0;
-  } */
   footer.footer-about {
     margin-top: 0;
   }

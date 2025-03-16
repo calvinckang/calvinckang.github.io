@@ -5,7 +5,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hola! I'm a Product Designer with a solid background in visual design and a strong knowledge of HTML and CSS, based in Barcelona.">
+  <meta name="description" content="Hello there! I'm Calvin, a Product Designer specializing in UI and design systems, with a strong background in front-end web development.">
   <meta property="og:image" content="https://calvinckang.github.io/images/social-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
@@ -29,16 +29,51 @@
   <header>
     <a href="index.html" class="logo">Calvin Kang</a>
     <nav>
+      <a href="#work" class="active">Work</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="intro">
-    <div class="middle-column">
-      <img src="images/calvin-memoji.png" class="memoji" alt="Calvin's Memoji"/>
+    <div class="middle-column memoji-scale">
+      <img id="memoji" src="images/memoji/calvin-memoji-1.png" alt="Calvin's Memoji">
     </div>
-    <h1 class="home-intro">Hey there! I'm Calvin, a <span class="gradient-1">Product Designer</span> with a solid background in visual design and a strong knowledge of HTML and CSS.</h1>
+    <h1 class="home-intro">Hello there! I'm Calvin, a <span class="gradient-1">Product Designer</span> specializing in UI and design systems, with a strong background in front-end web development.</h1>
+    <script src="main.js"></script>
+  </section>
+
+  <section class="jumplink" id="work"></section>
+
+  <section class="grid-layout">
+    <a href="dow-jones-risk-and-compliance.html" class="thumbnail">
+      <img src="images/dow-jones-risk-and-compliance/cover-thumbnail-locked.png" alt="Dow Jones Risk & Compliance"/>
+      <div class="snippet">
+        <h2>Dow Jones Risk & Compliance</h2>
+        <p>Redesigning a data-dense, financial crime compliance product to enhance its usability and accessibility, and building its design system.</p>
+      </div>
+    </a>
+    <a href="dow-jones-ims.html" class="thumbnail">
+      <img src="images/dow-jones-ims/cover-thumbnail.png" alt="Dow Jones IMS"/>
+      <div class="snippet">
+        <h2>Dow Jones IMS</h2>
+        <p>Modular solution that integrates Dow Jones' news and data directly into their customer's workspace.</p>
+      </div>
+    </a>
+    <a href="reportly.html" class="thumbnail">
+      <img src="images/reportly/cover-thumbnail.png" alt="Reportly"/>
+      <div class="snippet">
+        <h2>Reportly</h2>
+        <p>B2B SaaS web app for creating aesthetic reports with automated data import and custom branded templates collaboratively.</p>
+      </div>
+    </a>
+    <a href="chorescore.html" class="thumbnail">
+      <img src="images/chorescore/cover-thumbnail.png" alt="Chorescore"/>
+      <div class="snippet">
+        <h2>Chorescore</h2>
+        <p>Designing a household chores scheduling app with a twist: gamifying tasks to make them fun and engaging. Game on!</p>
+      </div>
+    </a>
   </section>
 
   <footer>

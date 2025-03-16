@@ -21,30 +21,32 @@ let lastImageIndex = null;
 
 // Function to change the image randomly
 function changeImage() {
-let randomIndex = Math.floor(Math.random() * images.length); // Generate a random index
+  let randomIndex = Math.floor(Math.random() * images.length);
 
-// Ensure the new index is different from the last one
-while (randomIndex === lastImageIndex) {
-  randomIndex = Math.floor(Math.random() * images.length);
-}
+  while (randomIndex === lastImageIndex) {
+    randomIndex = Math.floor(Math.random() * images.length);
+  }
 
-// Update the last image index
-lastImageIndex = randomIndex;
+  lastImageIndex = randomIndex;
 
-const imageElement = document.getElementById("memoji");
+  const imageElement = document.getElementById("memoji");
 
-// Fade out the current image
-imageElement.classList.add('fade-out');
+  // Add an event listener for transitionend
+  imageElement.addEventListener('transitionend', function handler() {
+    // Update the image source
+    imageElement.src = images[randomIndex];
 
-// Wait for the fade-out transition to complete
-setTimeout(() => {
-  // Update the image source
-  imageElement.src = images[randomIndex];
+    // Remove the fade-out class to fade in the new image
+    imageElement.classList.remove('fade-out');
 
-  // Remove the fade-out class to fade in the new image
-  imageElement.classList.remove('fade-out');
-}, 300); // Adjust this time based on your transition duration
+    // Remove the event listener to prevent memory leaks
+    imageElement.removeEventListener('transitionend', handler);
+  }, { once: true }); // Use { once: true } to remove the listener automatically
+
+  // Fade out the current image
+  imageElement.classList.add('fade-out');
 }
 
 // Attach the function to the image's click event
 document.getElementById("memoji").addEventListener("click", changeImage);
+

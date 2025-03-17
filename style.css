@@ -483,6 +483,9 @@ footer.footer-contact {
   form h1 {
     margin-top: 120px;
   }
+  img#memoji {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 424px) {

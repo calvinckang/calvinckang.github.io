@@ -287,6 +287,8 @@ section.project div.artwork, section.project div.divider-title, section.project 
 section.project div.divider-line {
   grid-column: 1 / span 12;
   border: 1px solid #e4e7eb;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 section.project div.title {

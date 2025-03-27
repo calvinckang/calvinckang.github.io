@@ -124,7 +124,7 @@ div.memoji-scale {
 }
 
 div.memoji-scale:hover {
-  scale: 102%;
+  scale: 103%;
 }
 
 img {
@@ -136,9 +136,10 @@ img {
 img#memoji {
   margin-top: 100px;
   transition: opacity 0.2s;
+  cursor: url('images/figma-cursor.svg'), pointer;
 }
 
-img#memoji, button {
+button {
   cursor: pointer;
 }
 
@@ -254,7 +255,7 @@ section.grid-layout a.thumbnail {
 }
 
 section.grid-layout a.thumbnail:hover {
-  scale: 101%;
+  scale: 102%;
 }
 
 section.grid-layout a.thumbnail div.snippet {

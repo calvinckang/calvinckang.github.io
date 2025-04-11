@@ -24,7 +24,7 @@ header {
   left: 0;
   right: 0;
   padding: 24px 40px 24px 40px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -115,7 +115,7 @@ section nav {
 section.jumplink {
   display: block;
   position: relative;
-  top: -90px;
+  top: -100px;
   visibility: hidden;
 }
 

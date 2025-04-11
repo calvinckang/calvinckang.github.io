@@ -305,12 +305,6 @@ section.project div.description {
   grid-column: 7 / span 5;
 }
 
-section.project div.alignment {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 section.project p {
   margin-bottom: 0;
 }

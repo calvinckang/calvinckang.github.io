@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all the elements you want to animate
+  const elements = document.querySelectorAll('.intro, .grid-layout, .about, .contact, .project, #passwordForm');
+
+  // Loop through each element and add the fade-in class
+  elements.forEach((element) => {
+    element.classList.add('fade-in');
+  });
+});
+
 // Array of image URLs
 const images = [
   "images/memoji/calvin-memoji-1.png",

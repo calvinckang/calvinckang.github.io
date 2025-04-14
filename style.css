@@ -3,7 +3,7 @@
 /* Initial state: hidden */
 .intro, .grid-layout, .about, .contact, .project, #passwordForm {
   opacity: 0;
-  transform: translateY(4px); /* Optional: adds a slight upward motion */
+  transform: translateY(8px); /* Optional: adds a slight upward motion */
   animation: fadeIn 0.3s ease-out forwards; /* Shared animation */
 }
 
@@ -11,7 +11,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(4px); /* Matches the initial state */
+    transform: translateY(8px); /* Matches the initial state */
   }
   to {
     opacity: 1;

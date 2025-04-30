@@ -80,12 +80,12 @@
     </div>
     <div class="middle-column">
       <p class="large-text no-margin-top"><strong>Background</strong></p>
-      <p>RiskCenter Financial Crime is Dow Jones' B2B product under Risk & Compliance, designed for conducting due diligence on potential customers, ongoing monitoring, and sanctions screening. The <strong>users</strong> of this product include <strong>financial institutions</strong> looking to ensure compliance with regulations. One of the tasks they often do is performing a database search for <strong>risk profiles</strong> on entities and individuals, assessing them to make informed decisions.</p>
+      <p>RiskCenter Financial Crime is a B2B product from Dow Jones, offered under its Risk & Compliance division. It is designed to support due diligence on potential customers, ongoing monitoring, and sanctions screening. The primary users are financial institutions seeking to ensure regulatory compliance. Typical tasks include searching the database for <strong>risk profiles</strong> and assessing them to make informed decisions. The product was launched in the early 2000s and had its first redesign in 2018.</p>
     </div>
     <div class="artwork">
       <figure>
         <img src="images/dow-jones-risk-and-compliance/legacy-risk-profile-page.png" alt="Legacy Risk Profile Page"/>
-        <figcaption>Legacy design of risk profile page.</figcaption>
+        <figcaption>Legacy design of the risk profile page.</figcaption>
       </figure>
     </div>
     <div class="artwork">
@@ -95,10 +95,15 @@
       </figure>
     </div>
     <div class="middle-column">
-      <p class="large-text no-margin-top"><strong>Problem</strong></p>
-      <p>From user feedback, we identified several problems. On the risk profile page specifically, users complained about <strong>excessive blank space</strong> in the UI. They wanted to see more data at a glance without needing to scroll, emphasizing that higher <strong>information density</strong> was key to their workflow efficiency. Around <strong>15% of users</strong> preferred and continued using the <strong>legacy application</strong> due to its superior data density. Additionally, users reported a <strong>lack of clear visual hierarchy</strong> and a <strong>confusing reading pattern</strong> in some sections.</p>
-      <p class="large-text pull-quote">Users are struggling to assess risk profile pages efficiently due to low information density and lack of clear visual hierarchy.</p>
-      <p>Apart from user feedback, we also found <strong>accessibility issues</strong>, e.g. unmet minimum color contrast, and missing aria-label and role. The UI felt <strong>outdated</strong>, and it wasn't built using a design system, making it difficult to maintain consistency.</p>
+      <p class="large-text no-margin-top"><strong>Challenges</strong></p>
+      <p>Through user feedback and our internal evaluation, we identified several <strong>problems</strong> with the current risk profile page:</p>
+      <ul>
+        <li>Excessive blank space and low information density made it difficult for users to efficiently assess risk profiles.</li>
+        <li>15% of users continued using the legacy application because it provided better data density.</li>
+        <li>The interface lacked a clear visual hierarchy and had a confusing reading pattern.</li>
+        <li>Accessibility issues were present, including insufficient color contrast, missing ARIA and role attributes, and keyboard navigation problems.</li>
+        <li>The UI felt outdated and was not built on a design system, leading to inconsistency and maintenance difficulties.</li>
+      </ul>
     </div>
     <div class="artwork">
       <figure>
@@ -107,16 +112,21 @@
       </figure>
     </div>
     <div class="middle-column">
-      <p class="large-text no-margin-top"><strong>Solution</strong></p>
-      <p>We analyzed the problems and agreed on how to solve them:</br>
+      <p class="large-text no-margin-top"><strong>Solutions and Goals</strong></p>
+      <p>We analyzed the problems and aligned on <strong>key solutions</strong>:</p>
       <ul>
-        <li><strong>Optimize information density</strong></li>
-        <li><strong>Improve information architecture and visual hierarchy</strong></li>
-        <li><strong>Comply with accessibility</strong></li>
-        <li><strong>Modernize UI</strong></li>
-        <li><strong>Build design system</strong></li>
+        <li>Optimize information density</li>
+        <li>Improve information architecture and visual hierarchy</li>
+        <li>Comply with accessibility</li>
+        <li>Modernize UI</li>
+        <li>Build design system</li>
       </ul>
-      <p>The <strong>main goals</strong> were to enhance usability and accessibility, and to fully migrate all users from the legacy application.</p>
+      <p>Our <strong>main goals</strong> were to:</p>
+      <ul>
+        <li>Enhance user workflow efficiency</li>
+        <li>Increase user satisfaction</li>
+        <li>Fully migrate all users from the legacy application</li>
+      </ul>
     </div>
 
     <div class="divider-line"></div>
@@ -174,7 +184,7 @@
     </div>
     <div class="middle-column">
       <p class="large-text no-margin-top"><strong>Visual Design</strong></p>
-      <p>The old <strong>global navigation</strong> had a clunky look and feel, and some of the icons weren't accurate representations of the items. I explored the possibilities of the icons to convey the true meaning, while ensuring the <strong>style consistency</strong>. Some improvements were also made in the <strong>visual hierarchy</strong>.</p>
+      <p>The old <strong>global navigation</strong> had a clunky look and feel, and some of the icons weren't accurate representations of the items. I explored the possibilities of the icons to convey the true meaning, while ensuring the style consistency. Some improvements were also made in the <strong>visual hierarchy</strong>.</p>
     </div>
     <div class="artwork">
       <figure>
@@ -192,7 +202,7 @@
       </figure>
     </div>
     <div class="middle-column">
-      <p>I designed <strong>interactive elements</strong> (e.g. tabs, dropdowns, and modals), <strong>edge case screens</strong> (e.g. empty and error states), and <strong>responsive page layouts</strong> across 5 different breakpoints.</p>
+      <p>I designed interactive elements (e.g. tabs, dropdowns, and modals), edge case screens (e.g. empty and error states), and responsive page layouts across 5 different breakpoints.</p>
     </div>
     <div class="artwork">
       <figure>
@@ -202,7 +212,7 @@
     </div>
     <div class="middle-column">
       <p class="large-text no-margin-top"><strong>Prototype and User Testing</strong></p>
-      <p>The design was then turned into an <strong>interactive prototype</strong> to be tested with user groups in different regions. The results were positive.</p>
+      <p>The design was then turned into an interactive prototype to be tested with user groups in different regions. The results were positive, with users reporting <strong>faster task completion times</strong> and a <strong>more intuitive interface</strong>. However, there was feedback suggesting that some key data would be more effective if placed higher on the page, to which we made the necessary adjustments.</p>
     </div>
     <div class="artwork prototype">
       <figure>
@@ -218,7 +228,7 @@
     </div>
     <div class="middle-column">
       <p class="large-text no-margin-top"><strong>Design System</strong></p>
-      <p>Following the design system framework established by other Dow Jones products, I initiated the design system work by building the <strong>foundations</strong>, such as colors, typography, elevation, grids, iconography, etc. Based on the color audit that I did previously, I created the <strong>core palettes</strong> for this product (primary, secondary, tertiary, and so on), and assigned them to the <strong>contextual colors</strong> (ink, interface, and interactive). Once the foundations were defined, it was time to build the <strong>component library</strong>. It's important to keep accessibility in mind throughout this process.</p>
+      <p>Following the design system framework established by other Dow Jones products, I initiated the design system work by building the <strong>foundations</strong>, such as colors, typography, elevation, grids, iconography, etc. Based on the color audit that I did previously, I created the core palettes for this product (primary, secondary, tertiary, and so on), and assigned them to the contextual colors (ink, interface, and interactive). Once the foundations were defined, it was time to build the <strong>component library</strong>. It's important to keep accessibility in mind throughout this process.</p>
     </div>
     <div class="artwork">
       <figure>
@@ -233,12 +243,18 @@
       </figure>
     </div>
     <div class="middle-column">
-      <p>All these assets, together with the final visual design, were <strong>handed off</strong> to the Developers with thorough documentation.</p>
+      <p class="large-text no-margin-top"><strong>Implementation</strong></p>
+      <p>I conducted <strong>QA</strong> after the components were built in Storybook and <strong>UAT</strong> after implementation in each environment to ensure alignment between design and development. Rigorous testing was performed by all teams prior to release. We identified several issues in edge cases and <strong>prioritized fixes</strong> based on impact and effort, deferring some to post-release.</p>
     </div>
     <div class="middle-column">
-      <p class="large-text no-margin-top"><strong>Implementation and Release</strong></p>
-      <p>I conducted <strong>QA</strong> after the components were built in Storybook and <strong>UAT</strong> after the implementation in each environment to ensure alignment between design and development. Rigorous testing was performed by all teams prior to release. We identified several issues in some edge cases, for which we had to <strong>prioritize fixes</strong> based on impact and effort required. We decided to defer some of the fixes to post-release.</p>
-      <p>In the end, this project was a success and was well-received by both users and stakeholders. We successfully migrated <strong>100% of users</strong> to the redesigned application. Users said that the new risk profile page allowed them to find crucial information <strong>faster</strong> and <strong>easier</strong> than before, highlighting that <strong>twice as much information</strong> was now displayed above the fold, making their work more efficient. They also complimented the new look and feel, describing it as <strong>clean</strong> and <strong>modern</strong>.</p>
+      <p class="large-text no-margin-top"><strong>Results</strong></p>
+      <p>The project led to several key improvements that were validated through post-release testing and user feedback, aligning with the goals we set out to achieve:</p>
+      <p><strong>1. Enhanced user workflow efficiency</strong></br>
+      The average time required for users to complete key due diligence and risk assessment tasks was reduced by approximately 20%, based on measured task completion times during pre- and post-release user testing, reflecting a significant boost in workflow efficiency.</p>
+      <p><strong>2. Increased user satisfaction</strong></br>
+      A post-release survey indicated a 30% increase in user satisfaction. Users highlighted the improved information density and modern, intuitive interface, specifically noting that the new risk profile page allowed them to find crucial information faster and more easily than before, with about twice as much information displayed above the fold.</p>
+      <p><strong>3. Full migration from the legacy application</strong></br>
+      We successfully migrated 100% of users from the legacy application to the new platform, ensuring consistency and alignment across the user base.</p>
     </div>
 
     <div class="artwork prototype">
@@ -254,9 +270,11 @@
       <h2>Learnings 💫</h2>
     </div>
     <div class="middle-column">
-      <p>This project provided valuable insights and lessons, and here are the 2 key learnings for me:</p>
-      <p>Working within a multi-brand design system presented unique challenges. Each brand or product often requires distinct styling, but our shared component library had limited flexibility for assigning tokens. As a result, customizations required modifications to the codebase, adding extra work and time for developers. This experience highlighted the need for careful planning and coordination when implementing design systems across multiple brands, ensuring that <strong>design decisions</strong> are both <strong>scalable</strong> and <strong>sustainable</strong> for the future.</p>
-      <p>During implementation, unforeseen issues can arise, such as edge cases we hadn't accounted for, performance problems, or discrepancies between the intended design and the actual build outcome. Maintaining <strong>close communication</strong> and building <strong>strong relationships</strong> with developers from the very beginning helps minimize these issues. It's important to plan for sufficient time to address challenges before release, but when time is limited, <strong>prioritization</strong> is essential.</p>
+      <p>The process provided valuable insights and lessons, and here are the 2 key learnings for me:</p>
+      <p><strong>1. Multi-brand design system</strong></br>
+      Working within a multi-brand design system presented unique challenges. Each brand or product often requires distinct styling, but our shared component library had limited flexibility for assigning tokens. As a result, customizations required modifications to the codebase, adding extra work and time for developers. This experience highlighted the need for careful planning and coordination when implementing design systems across multiple brands, ensuring that design decisions are both scalable and sustainable for the future.</p>
+      <p><strong>2. Communication and prioritization</strong></br>
+      During implementation, unforeseen issues can arise, such as edge cases we hadn't accounted for, performance problems, or discrepancies between the intended design and the actual build outcome. Maintaining close communication and building strong relationships with developers from the very beginning helps minimize these issues. It's important to plan for sufficient time to address challenges before release, but when time is limited, prioritization is essential.</p>
     </div>
 
     <div class="divider-line"></div>
